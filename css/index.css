@@ -1,0 +1,33 @@
+body{
+    background-color: #2471A3 ;
+}
+#caja1{
+    background-color: #1A5276;
+    border: 1px solid #000000;
+    padding-left:1000px;
+}
+#h1{
+    background-color: #000000;
+    color: #A9CCE3;
+    font-size: 40px;
+    font-family: 'Caveat';
+   
+    
+}
+#h2{
+    color:#A9CCE3;
+    text-align: center;
+    font-family: 'Caveat';
+    font-size: 30px;
+}
+#div{
+    background-color: #1A5276;
+    box-sizing: 10px,10px,10px,10px;
+    color: #A9CCE3;
+    height:150px;
+    width: 150px;
+}
+#index{
+    border: 1px solid #000000;
+    overflow: block 520px; ;
+}
