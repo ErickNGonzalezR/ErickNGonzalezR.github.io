@@ -27,7 +27,7 @@ body{
     height:150px;
     width: 150px;
 }
-#index{
+#index :hover{
     border: 1px solid #000000;
     overflow: block 520px; ;
 }
