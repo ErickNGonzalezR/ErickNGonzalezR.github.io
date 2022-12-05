@@ -15,7 +15,7 @@ import CardMembershipOutlinedIcon from '@mui/icons-material/CardMembershipOutlin
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 
-const drawerWidth = 240;
+const drawerWidth = 230;
 
 const openedMixin = (theme) => ({
   width: drawerWidth,
@@ -32,9 +32,9 @@ const closedMixin = (theme) => ({
     duration: theme.transitions.duration.leavingScreen,
   }),
   overflowX: 'hidden',
-  width: `calc(${theme.spacing(8)} + 1px)`,
+  width: `calc(${theme.spacing(5)} + 1px)`,
   [theme.breakpoints.up('sm')]: {
-    width: `calc(${theme.spacing(8)} + 1px)`,
+    width: `calc(${theme.spacing(5)} + 1px)`,
   },
 });
 
@@ -43,7 +43,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'flex-end',
   padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
   ...theme.mixins.toolbar,
 }));
 
@@ -83,7 +82,6 @@ const AppDrawer = styled(Drawer, {
 }));
 
 export default function Header() {
-  // const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
@@ -116,7 +114,7 @@ export default function Header() {
             component="div"
             sx={{ flexGrow: 1 }}
           >
-            Curriculo
+            Curriculum
           </Typography>
           <IconButton
             edge="end"
@@ -124,7 +122,6 @@ export default function Header() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <AccountCircleIcon />
           </IconButton>
         </Toolbar>
       </HeaderBar>

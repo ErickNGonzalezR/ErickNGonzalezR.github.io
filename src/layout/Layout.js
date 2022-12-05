@@ -16,7 +16,7 @@ class Layout extends React.Component {
     return (
       <Container>
         <Header />
-        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        <Box component="main" sx={{ flexGrow: 1, p: 1 }}>
           {children}
         </Box>
         <Footer />
