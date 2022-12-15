@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import {
-  AppBar, Toolbar, IconButton, Typography,
-  Divider, Drawer, ListItemText, ListItemIcon,
-  ListItem, ListItemButton, List,
-} from '@mui/material';
+import {AppBar, Toolbar, IconButton, Typography, Divider, Drawer, ListItemText, ListItemIcon,
+  ListItem, ListItemButton, List,} 
+
+from '@mui/material';
 import { styled } from '@mui/material/styles';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from '@mui/icons-material/Menu';
 import CardMembershipOutlinedIcon from '@mui/icons-material/CardMembershipOutlined';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
-import ContactPageIcon from '@mui/icons-material/ContactPage';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 
-const drawerWidth = 230;
+const drawerWidth = 220;
 
 const openedMixin = (theme) => ({
   width: drawerWidth,
@@ -32,9 +32,9 @@ const closedMixin = (theme) => ({
     duration: theme.transitions.duration.leavingScreen,
   }),
   overflowX: 'hidden',
-  width: `calc(${theme.spacing(5)} + 1px)`,
+  width: `calc(${theme.spacing(8)} + 1px)`,
   [theme.breakpoints.up('sm')]: {
-    width: `calc(${theme.spacing(5)} + 1px)`,
+    width: `calc(${theme.spacing(8)} + 1px)`,
   },
 });
 
@@ -43,6 +43,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'flex-end',
   padding: theme.spacing(0, 1),
+  // necessary for content to be below app bar
   ...theme.mixins.toolbar,
 }));
 
@@ -82,6 +83,7 @@ const AppDrawer = styled(Drawer, {
 }));
 
 export default function Header() {
+  // const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
@@ -212,13 +214,21 @@ export default function Header() {
               <ListItemText primary="Experiencia" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem> 
-
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <ListItem
-            key="contacto"
+            key="Contacto"
             disablePadding
             sx={{ display: 'block' }}
-            component={Link}
-            to="/Contacto"
           >
             <ListItemButton
               sx={{
@@ -234,14 +244,52 @@ export default function Header() {
                   justifyContent: 'center',
                 }}
               >
-                <ContactPageIcon/>
+                <ContactMailIcon/>
               </ListItemIcon>
-              <ListItemText
-                primary="contacto"
-                sx={{ opacity: open ? 1 : 0 }}
-              />
+              <ListItemText primary="Contacto" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
+
+          <a href ='https://api.whatsapp.com/send/?phone=573118324486&text&type=phone_number&app_absent=0'>
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? 'initial' : 'center',
+                px: 2.5,
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : 'auto',
+                  justifyContent: 'center',
+                }}
+              >
+                < WhatsAppIcon/>
+              </ListItemIcon>
+              <ListItemText primary="WhatsApp" sx={{ opacity: open ? 1 : 0 }} />
+            </ListItemButton>
+          </a>
+          <a href ='tel:+573118324486'>
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? 'initial' : 'center',
+                px: 2.5,
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : 'auto',
+                  justifyContent: 'center',
+                }}
+              >
+                < PhoneAndroidIcon/>
+              </ListItemIcon>
+              <ListItemText primary="Celular" sx={{ opacity: open ? 1 : 0 }} />
+            </ListItemButton>
+          </a>
           <Divider />
         </List>
       </AppDrawer>

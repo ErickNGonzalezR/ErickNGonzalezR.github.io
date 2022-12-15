@@ -5,6 +5,7 @@ import HomePage from '../pages/Home';
 import Experiencia from '../pages/Experiencia';
 import Contacto from '../pages/Contacto';
 import Certificados from '../pages/Certificados';
+
 import CertificadoGit from '../CerticatePage/CertificadoGit';
 import CertificadoPython from '../CerticatePage/CertificadoPython';
 
