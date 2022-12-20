@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Typography, Box } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
 
 class Certificados extends React.PureComponent {
