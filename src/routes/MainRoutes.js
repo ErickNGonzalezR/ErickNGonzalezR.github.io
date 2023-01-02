@@ -8,33 +8,54 @@ import Certificados from '../pages/Certificados';
 
 import CertificadoGit from '../CerticatePage/CertificadoGit';
 import CertificadoPython from '../CerticatePage/CertificadoPython';
+import CertificadoIntroduccionLineaComandos from '../CerticatePage/CertificadoIntroduccionLineaComandos';
+import CertificadoIntroduccionBackend from '../CerticatePage/CertificadoIntroduccionBackend';
+import CertificadoPOO from '../CerticatePage/CertificadoPOO';
+import CertificadoIntroduccionJavaSE from '../CerticatePage/CertificadoIntroduccionJavaSE';
+
 
 const MainRoutes = [
   {
     path: '/',
-    element: <PublicPage />,
+    element: <PublicPage/>,
   },
   {
     path: 'home',
-    element: <HomePage />,
+    element: <HomePage/>,
   },
   {
     path: 'experiencia',
-    element: <Experiencia />,
+    element: <Experiencia/>,
   },{
     path: 'contacto',
-    element: <Contacto />,
+    element: <Contacto/>,
   },{
     path: 'certificados',
-    element: <Certificados />,
+    element: <Certificados/>,
   },
   {
     path: 'CertificadoGit',
-    element: <CertificadoGit />,
+    element: <CertificadoGit/>,
   },
   {
     path: 'CertificadoPython',
-    element: <CertificadoPython />,
+    element: <CertificadoPython/>,
+  },
+  {
+    path: 'CertificadoIntroduccionLineaComandos',
+    element: <CertificadoIntroduccionLineaComandos/>,
+  },
+  {
+    path: 'CertificadoIntroduccionBackend',
+    element: <CertificadoIntroduccionBackend/>,
+  },
+  {
+    path: 'CertificadoPOO',
+    element: <CertificadoPOO/>,
+  },
+  {
+    path: 'CertificadoIntroduccionJavaSE',
+    element: <CertificadoIntroduccionJavaSE/>,
   },
 ];
 

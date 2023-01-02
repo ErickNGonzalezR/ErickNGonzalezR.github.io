@@ -35,6 +35,22 @@ class Certificados extends React.PureComponent {
             <Typography variant="h5" color="inherit" component="h3" fontFamily="Comic Sans MS" align='Center'>
               JAVA
             </Typography>
+            <a href='/CertificadoIntroduccionLibeComandos'>
+            <img  src='https://i.pinimg.com/originals/9a/8c/86/9a8c862466762aa381649db694604012.jpg'
+                  title='Introduccion a la linea de comandos' alt='Introduccion a la linea de comandos' width={300}/>
+            </a> 
+            <a href='/CertificadoIntroduccionBackend'>
+            <img  src='https://i.pinimg.com/originals/72/c0/1d/72c01d9d0723d34c1ca67064a0a5975f.jpg'
+                  title='Introduccion al desarrollo Backend' alt='Introduccion al desarrollo Backend' width={300}/>
+            </a> 
+            <a href='/CertificadoPOO'>
+            <img  src='https://i.pinimg.com/originals/f0/8d/ca/f08dca75f53ec9bd1d201dcde2e3e859.jpg'
+                  title='Programacion orientada a objetos' alt='Programacion orientada a objetos' width={300}/>
+            </a> 
+            <a href='/CertificadoIntroduccionJavaSE'>
+            <img  src='https://i.pinimg.com/originals/bb/d2/60/bbd2609053dad707bf9c61e44aa562f2.jpg'
+                  title='Introduccion a Java SE' alt='Introduccion a Java SE' width={300}/>
+            </a>
           </Grid>
           <Grid item xs={20}>
             <Typography variant="h5" color="inherit" component="h3" fontFamily="Comic Sans MS" align='Center'>
