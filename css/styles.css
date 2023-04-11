@@ -1,0 +1,105 @@
+/*Estilos Globales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Estilos Generales*/
+header{
+    padding: 10px, 10px;
+}
+.image-container{
+    display: flex;
+}
+.image-container img{
+    width: 100%;
+}
+/*estilos de header*/
+#logo{
+    width: 100px;
+    position:absolute;
+    top: 20px;
+    left: 20px;
+}
+#logo img{
+    border-radius: 7px;
+}
+/*Estilos del hero*/
+#hero #computadora{
+    display: inline-block;
+    width:100%;    
+}
+#hero .information-container{
+    position: absolute;
+    top: 30%;
+    transform: translatey(-50%);
+    left: 0px;
+    display: flex;
+    width: 100%;
+    color:#fff;
+    padding: 0 50px;
+    -webkit-text-stroke: .3px #000000;
+}
+#hero .information-container #foto{
+    margin-left: 100px;
+    width: 150px;
+    opacity: 0;
+
+}
+#hero .information-container #foto img{
+    border-radius: 100%;
+}
+#hero .information-container .information{
+    margin-left: 20px;    
+    font-weight: bold;
+    width: calc(100% - 200px);
+}
+#hero .information-container .information h1{
+    font-size: 30px;
+}
+#hero .information-container .information p{
+    font-size: 20px;
+}
+#hero .information-container .information span{
+    display: inline-block;
+    font-size: 15px;
+    color: #a3bfd8;
+    margin-bottom: 50px;
+}
+/*Estilos del Main*/
+main {
+    padding: 100px;
+}
+main .social-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    list-style: none;
+}
+main .social-icons li{
+    margin-left: 5px;
+}
+main .social-icons .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+main .social-icons #twitter{
+    background: #1DA1F2;
+}
+main .social-icons #linkedin{
+    background: #0e76a8;
+}
+main .social-icons #gitHub{
+    background: #171515;
+}
+main .social-icons #platzi{
+    background: #12203d;
+}
