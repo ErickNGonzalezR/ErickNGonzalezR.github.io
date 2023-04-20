@@ -2,9 +2,10 @@
 :root{
     --white: #ffffff;
     --black: #000000;
-    --very-light-pink: #c7c7c7;
-    --text-input-field: #f7f7f7;
-    --hospital-green: #acd9b2;
+    --azul-twitter:#1DA1F2; 
+    --azul-linkedin:#0e76a8;
+    --negro-gitHub:#171515;
+    --azul-platzi:#12203d;
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
     --sm: 16px;
     --md: 20px;
@@ -91,12 +92,16 @@ footer{
 #hero .information-container .information span{
     display: inline-block;
     font-size: var(--sm);
-    color: #a3bfd8;
+    color: var(--azul-twitter);
     margin-bottom: 30px;
 }
 /*Estilos del Main*/
 main {
     padding: 100px;
+}
+
+main .informacion{
+    font-size: var(--md);
 }
 /*estilos del footer*/
 section{
@@ -121,22 +126,26 @@ footer .social-icons img{
     height: 50px
 }
 footer .social-icons #twitter{
-    background: #1DA1F2;
+    background: var(--azul-twitter);
 }
 footer .social-icons #linkedin{
-    background: #0e76a8;
+    background: var(--azul-linkedin);
 }
 footer .social-icons #gitHub{
-    background: #171515;
+    background: var(--negro-gitHub);
 }
 footer .social-icons #platzi{
-    background: #12203d;
+    background: var(--azul-platzi);
 }
 footer section div{
     margin: 5px;
 }
 /*diseño responsivo*/
  @media (max-width:640px) {
+    #hero .image-container img{
+        height: 174.84px;
+    }
+    
     #logo{
         width: 50px;
         top: 5px;
@@ -165,7 +174,11 @@ footer section div{
     }
 
     main {
-        padding: 50px;
+        padding: 30px;
+    }
+
+    main .informacion{
+        font-size: var(--mdr);
     }
 
     footer{
