@@ -1,4 +1,18 @@
 /*Estilos Globales*/
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+    --sm: 16px;
+    --md: 20px;
+    --lg: 24px;
+    --smr: 10px;
+    --mdr: 14px;
+    --lgr: 18px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +31,19 @@ header{
 .image-container img{
     width: 100%;
 }
+/*nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #12203d;
+}*/
+footer{
+    display: flex;
+    justify-content: center; 
+}
+/*estilos del nav*/
+
 /*estilos de header*/
 #logo{
     width: 100px;
@@ -34,9 +61,8 @@ header{
 }
 #hero .information-container{
     position: absolute;
-    top: 30%;
-    transform: translatey(-50%);
-    left: 0px;
+    top: 12%;
+    left: 40px;
     display: flex;
     width: 100%;
     color:#fff;
@@ -46,8 +72,7 @@ header{
 #hero .information-container #foto{
     margin-left: 100px;
     width: 150px;
-    opacity: 0;
-
+    display: none;
 }
 #hero .information-container #foto img{
     border-radius: 100%;
@@ -55,51 +80,112 @@ header{
 #hero .information-container .information{
     margin-left: 20px;    
     font-weight: bold;
-    width: calc(100% - 200px);
+    width: 80%
 }
 #hero .information-container .information h1{
-    font-size: 30px;
+    font-size: var(--lg);
 }
 #hero .information-container .information p{
-    font-size: 20px;
+    font-size: var(--md);
 }
 #hero .information-container .information span{
     display: inline-block;
-    font-size: 15px;
+    font-size: var(--sm);
     color: #a3bfd8;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 /*Estilos del Main*/
 main {
     padding: 100px;
 }
-main .social-icons{
+/*estilos del footer*/
+section{
+    align-content: center;
+}
+footer .social-icons{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    
     list-style: none;
 }
-main .social-icons li{
-    margin-left: 5px;
-}
-main .social-icons .social-icon{
+footer .social-icons .social-icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     height: 100%;
     width: 100%;
 }
-main .social-icons #twitter{
+footer .social-icons img{
+    height: 50px
+}
+footer .social-icons #twitter{
     background: #1DA1F2;
 }
-main .social-icons #linkedin{
+footer .social-icons #linkedin{
     background: #0e76a8;
 }
-main .social-icons #gitHub{
+footer .social-icons #gitHub{
     background: #171515;
 }
-main .social-icons #platzi{
+footer .social-icons #platzi{
     background: #12203d;
+}
+footer section div{
+    margin: 5px;
+}
+/*diseño responsivo*/
+ @media (max-width:640px) {
+    #logo{
+        width: 50px;
+        top: 5px;
+        left: 5px;
+    }
+    
+    #hero .information-container{
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        box-sizing:content-box;
+        padding: 0 40px;
+    }
+
+    #hero .information-container .information h1{
+        font-size: var(--lgr);
+    }
+
+    #hero .information-container .information p{
+        font-size: var(--mdr);
+    }
+
+    #hero .information-container .information span{
+        font-size: var(--smr);
+        margin-bottom: 15px;
+    }
+
+    main {
+        padding: 50px;
+    }
+
+    footer{
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    footer .social-icons{
+        justify-content: center;
+    }
+
+    footer .social-icons .social-icon{
+        padding: 5px;
+        border-radius: 5px;
+        height: 100%;
+        width: 100%;
+    }
+
+    footer .social-icons img{
+        height: 30px
+    }
 }
