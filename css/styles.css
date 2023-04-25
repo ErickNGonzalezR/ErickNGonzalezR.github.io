@@ -15,8 +15,6 @@
     --lgr: 18px;
 }
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -58,17 +56,21 @@ footer{
 /*Estilos del hero*/
 #hero #computadora{
     display: inline-block;
-    width:100%;    
+    width:100%;   
+}
+#hero #computadora img{
+    width:100%; 
+    height: 270px;   
 }
 #hero .information-container{
     position: absolute;
+    margin: 0 40px 0 40px;
     top: 12%;
-    left: 40px;
     display: flex;
     width: 100%;
     color:#fff;
-    padding: 0 50px;
-    -webkit-text-stroke: .3px #000000;
+    -webkit-text-stroke: .3px var(--black);
+    justify-content: center;
 }
 #hero .information-container #foto{
     margin-left: 100px;
@@ -102,6 +104,9 @@ main {
 
 main .informacion{
     font-size: var(--md);
+}
+#hero .information-container .informacion{
+    margin: 10px;
 }
 /*estilos del footer*/
 section{
@@ -143,13 +148,12 @@ footer section div{
 /*diseño responsivo*/
  @media (max-width:640px) {
     #hero .image-container img{
+        width: 100%;
         height: 174.84px;
     }
     
     #logo{
-        width: 50px;
-        top: 5px;
-        left: 5px;
+        display: none;
     }
     
     #hero .information-container{
@@ -159,7 +163,9 @@ footer section div{
         box-sizing:content-box;
         padding: 0 40px;
     }
-
+    #hero .information-container .information {
+        margin-left: 0;
+    }
     #hero .information-container .information h1{
         font-size: var(--lgr);
     }
@@ -182,8 +188,9 @@ footer section div{
     }
 
     footer{
+        margin-top: 20px;
         width: 100%;
-        position: absolute;
+        position:relative;
         bottom: 20px;
     }
 
