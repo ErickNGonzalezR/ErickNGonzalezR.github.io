@@ -64,7 +64,7 @@ footer{
 }
 #hero .information-container{
     position: absolute;
-    margin: 0 40px 0 40px;
+    /*margin: 0 40px 0 40px;*/
     top: 12%;
     display: flex;
     width: 100%;
@@ -109,6 +109,12 @@ main .informacion{
     margin: 10px;
 }
 /*estilos del footer*/
+footer{
+    margin-top: 20px;
+    width: 100%;
+    position:absolute;
+    bottom: 100px;
+}
 section{
     align-content: center;
 }
@@ -146,7 +152,7 @@ footer section div{
     margin: 5px;
 }
 /*diseño responsivo*/
- @media (max-width:640px) {
+@media (max-width:640px) {
     #hero .image-container img{
         width: 100%;
         height: 174.84px;
@@ -161,7 +167,7 @@ footer section div{
         top: 30px;
         left: 0px;
         box-sizing:content-box;
-        padding: 0 40px;
+        padding: 0 0;
     }
     #hero .information-container .information {
         margin-left: 0;
@@ -188,10 +194,8 @@ footer section div{
     }
 
     footer{
-        margin-top: 20px;
-        width: 100%;
-        position:relative;
-        bottom: 20px;
+
+        bottom: 50px;
     }
 
     footer .social-icons{
