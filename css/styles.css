@@ -142,6 +142,7 @@ main .informacion{
 	display: none;
 }
 
+
 [class^="swiper-button-"] {
 	width: 44px;
 	opacity: 0;
