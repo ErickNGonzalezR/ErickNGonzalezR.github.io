@@ -1,8 +1,6 @@
-/*Estilos Globales*/
 :root{
     --white: #ffffff;
     --black: #000000;
-    --azul-twitter:#1DA1F2; 
     --azul-linkedin:#0e76a8;
     --negro-gitHub:#171515;
     --azul-platzi:#12203d;
@@ -10,50 +8,43 @@
     --sm: 16px;
     --md: 20px;
     --lg: 24px;
+    
     --smr: 10px;
     --mdr: 14px;
     --lgr: 18px;
 }
-*{
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/*Estilos Generales*/
-header{
-    padding: 10px, 10px;
+.div-space{
+    height: 50px;
 }
-.image-container{
-    display: flex;
+.div-space1{
+    height: 160px;
 }
-.image-container img{
-    width: 100%;
+.nav-active {
+    border-radius: 10px;
+    color: #12203d;
+    background-color: white;
 }
-/*nav{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    background: #12203d;
-}*/
-footer{
-    display: flex;
-    justify-content: center; 
+h2{
+    
+    border-bottom: 0.5px solid black;
+    margin: 25px;
 }
-/*estilos del nav*/
-
-/*estilos de header*/
-#logo{
-    width: 100px;
-    position:absolute;
-    top: 20px;
-    left: 20px;
+/***/
+#hero{
+    top: 100px;
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-cuadricula-digital-futurista-azul-oscuro-degradado_53876-129728.jpg?w=826&t=st=1681071767~exp=1681072367~hmac=92a06b09df645182099ee194896878b33cd3c110fad29fb7166e1d52baa412b4');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-#logo img{
-    border-radius: 7px;
-}
-/*Estilos del hero*/
 #hero #computadora{
     display: inline-block;
     width:100%;   
@@ -63,8 +54,7 @@ footer{
     height: 270px;   
 }
 #hero .information-container{
-    position: absolute;
-    /*margin: 0 40px 0 40px;*/
+    position: static;
     top: 12%;
     display: flex;
     width: 100%;
@@ -97,84 +87,88 @@ footer{
     color: var(--azul-twitter);
     margin-bottom: 30px;
 }
-/*Estilos del Main*/
-main {
-    padding: 100px;
-}
-
-main .informacion{
-    font-size: var(--md);
-}
-#hero .information-container .informacion{
-    margin: 10px;
-}
-/*.swiper-slide{
-    background-image: https://i.pinimg.com/originals/fb/86/df/fb86dfb36fa7d0626392e086ecdaa355.jpg;
-}*/
-.swiper-container {
-	width: 100%;
-	height: 28vw;
-	transition: opacity .6s ease;
-}
-
-.swiper-container.swiper-container-coverflow {
-	padding-top: 2%;
-}
-
-.swiper-container.loading {
-	opacity: 0;
-	visibility: hidden;
-}
-
-.swiper-container:hover .swiper-button-prev,
-  .swiper-container:hover .swiper-button-next {
-	transform: translateX(0);
-	opacity: 1;
-	visibility: visible;
-}
-
-.swiper-slide {
-	background-position: center;
-	background-size: cover;
-}
-
-.swiper-slide .entity-img {
-	display: none;
-}
-
-
-[class^="swiper-button-"] {
-	width: 44px;
-	opacity: 0;
-	visibility: hidden;
-}
-
-.swiper-button-prev {
-	transform: translateX(50px);
-}
-
-.swiper-button-next {
-	transform: translateX(-50px);
-}
-
- 
-/*estilos del footer*/
-footer{
-    margin-top: 20px;
+/**/
+.nav{
     width: 100%;
-    position:relative;
-    bottom: 20px;
+    padding: 10px;
+    background-color: #12203d;
+    color: #ffffff;
+    position: fixed;
 }
-section{
-    align-content: center;
-}
-footer .social-icons{
+.ul-nav{
     display: flex;
+    flex-direction: row;
+}
+ul{ 
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.li-nav{
+  padding: 5px;  
+}
+a{
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.div-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+.h3-nav{
+    
+}
+
+/**/
+
+/**/
+.container-acerca-de{
+    margin-top: 60px;
+}
+.acerca-de{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     
+
+}
+.div-acerca{
+    border-radius: 30px;
+    margin: 15px;
+    padding: 10px;
+    border: 0.5px solid  #12203d;
+    height: auto;
+    width: 30%;
+}
+/**/
+h3{
+    padding: 10px;
+ font-size: var(--md);   
+}
+.informacion{
+    padding: 15px;
+    margin-top: 10px;
+    font-size: var(--sm);
+}
+.tabla-informacion{
+    margin-top: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+td{
+    padding: 5px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
-footer .social-icons .social-icon{
+.social-icons .social-icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,84 +177,110 @@ footer .social-icons .social-icon{
     height: 100%;
     width: 100%;
 }
-footer .social-icons img{
-    height: 50px
+.social-icons img{
+    height: 25px
 }
-footer .social-icons #twitter{
-    background: var(--azul-twitter);
+.social-icons #x{
+    background: black;
 }
-footer .social-icons #linkedin{
+.social-icons #linkedin{
     background: var(--azul-linkedin);
 }
-footer .social-icons #gitHub{
+.social-icons #gitHub{
     background: var(--negro-gitHub);
 }
-footer .social-icons #platzi{
+.social-icons #platzi{
     background: var(--azul-platzi);
 }
-footer section div{
+
+.socia{
     margin: 5px;
 }
-/*diseño responsivo*/
-@media (max-width:640px) {
+.logo img{
+    width: 50px;
+}
 
-    #hero .image-container img{
-        width: 100%;
-        height: 174.84px;
-    }
-    
-    #logo{
-        display: none;
-    }
-    
-    #hero .information-container{
-        position: absolute;
-        top: 30px;
-        left: 0px;
-        box-sizing:content-box;
-        padding: 0 0;
-    }
-    #hero .information-container .information {
-        margin-left: 0;
-    }
-    #hero .information-container .information h1{
-        font-size: var(--lgr);
-    }
 
-    #hero .information-container .information p{
-        font-size: var(--mdr);
-    }
+/**/
+.educacion{
+    padding: 15px;
+}
+.div-educacion{
+    padding: 20px;
+}
+h4{
+    font-size: var(--lg);
+}
+.span-educaion{
+    font-size: var(--md);
+}
+.education ul{
+    left: 10px;
+}
+.li-educacion{
+    list-style: disc;
+    padding: 5px;
+}
 
-    #hero .information-container .information span{
-        font-size: var(--smr);
-        margin-bottom: 15px;
-    }
+.skills{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.label{
+    padding-top: 15px;
+}
+#file{
+    width: 100%;
+    padding-bottom:15px;
+}
 
-    main {
-        padding: 30px;
-    }
+/**/
 
-    main .informacion{
-        font-size: var(--mdr);
-    }
+/*.div-form{
+    margin: 30px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    display: flex;
 
-   
-    footer{
-        align-content: flex-end;
-    }
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}*/
+.div-form{ 
+    margin-left: 450px;
+    left: 50px;
+    background-color: #0e76a8;
+    padding: 30px;
+    width: 30%;
+    margin-bottom: 30px;
+}
+.form-input{
+    font-family: inherit;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 0.5px solid black;
+    border-radius: 0.2em;
+}
+.form-input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 0.5em;
+    background-color: #12203d;
+    color: white;
+    font-weight: 300;
 
-    footer .social-icons{
-        justify-content: center;
-    }
-
-    footer .social-icons .social-icon{
-        padding: 5px;
-        border-radius: 5px;
-        height: 100%;
-        width: 100%;
-    }
-
-    footer .social-icons img{
-        height: 30px
-    }
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+}
+.form-cta{
+    font-family: inherit;
+}
+.form-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
 }
